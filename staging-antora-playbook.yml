@@ -55,6 +55,15 @@ content:
     branches: tutorials
   - url: https://github.com/couchbaselabs/tutorials-contrib.git
     branches: master
+  - url: https://github.com/couchbaselabs/userprofile-couchbase-mobile.git
+    branches: [sync-update-playbook, query-update-playbook, standalone-update-playbook]
+    start_path: content
+  - url: https://github.com/couchbaselabs/universitylister-android.git
+    branches: master-update-playbook
+    start_path: content
+  - url: https://github.com/couchbaselabs/mobile-training-todo.git
+    branches: 1.x-update-playbook
+    start_path: content
 asciidoc:
   attributes:
     experimental: ''
