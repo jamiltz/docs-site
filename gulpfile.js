@@ -1,12 +1,15 @@
 'use strict'
 
 const connect = require('gulp-connect');
+const fs = require('fs');
 const generator = require('@antora/site-generator-default');
 const gulp = require('gulp');
+const yaml = require('yaml-js');
 
+let filename = "local-antora-playbook.yml";
 let args = [
   "--playbook",
-  "local-antora-playbook.yml"
+  filename
 ];
 
 gulp.task('build', function (cb) {
@@ -27,7 +30,13 @@ gulp.task('preview', ['build'], function () {
 })
 
 gulp.task('watch', function () {
-  let dirs = ['../**/**.yml', '../**/**.adoc'];
+  let json_content = fs.readFileSync(`${__dirname}/${filename}`, 'UTF-8');
+  let yaml_content = yaml.load(json_content);
+  let dirs = yaml_content.content.sources
+    .map(source => [
+      `${source.url}/**/**.yml`,
+      `${source.url}/**/**.adoc`
+    ]);
   gulp.watch(dirs, ['preview']);
 });
 
