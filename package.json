@@ -1,16 +1,7 @@
 {
   "name": "docs-site",
-<<<<<<< HEAD
   "description": "Couchbase Documentation Site",
   "homepage": "https://docs.couchbase.com",
-=======
-  "version": "1.0.0",
-  "description": "Couchbase Documentation Site",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
->>>>>>> add gulpfile
   "dependencies": {
     "@antora/cli": "^1.1.1",
     "@antora/site-generator-default": "^1.1.1",
@@ -24,22 +15,4 @@
     "type": "git",
     "url": "git+https://github.com/couchbase/docs-site.git"
   }
-=======
-    "gulp-connect": "^5.6.1"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/couchbase/docs-site.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/couchbase/docs-site/issues"
-  },
-  "homepage": "https://github.com/couchbase/docs-site#readme"
->>>>>>> add gulpfile
 }
