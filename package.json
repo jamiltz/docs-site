@@ -5,7 +5,7 @@
   "homepage": "https://docs.couchbase.com",
 =======
   "version": "1.0.0",
-  "description": "= Couchbase Documentation Site // Settings: :hide-uri-scheme: // URLs: :url-docs: https://docs.couchbase.com :url-org: https://github.com/couchbase :url-ui: {url-org}/docs-ui",
+  "description": "Couchbase Documentation Site",
   "main": "index.js",
   "directories": {
     "lib": "lib"
