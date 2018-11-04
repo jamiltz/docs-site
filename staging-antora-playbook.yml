@@ -62,7 +62,10 @@ content:
     branches: master-update-playbook
     start_path: content
   - url: https://github.com/couchbaselabs/mobile-training-todo.git
-    branches: 1.x-update-playbook
+    branches: tutorials
+    start_path: content
+  - url: https://github.com/couchbaselabs/mobile-travel-sample.git
+    branches: tutorials
     start_path: content
 asciidoc:
   attributes:
